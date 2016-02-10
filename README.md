@@ -1,3 +1,3 @@
-# AstraMediaGroup Web Starter Kit
+# Стартовый репозиторий нового проекта
 
 ...
