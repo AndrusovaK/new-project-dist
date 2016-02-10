@@ -1,0 +1,47 @@
+%sprite:before {
+    content: ' ';
+    background-image: url("../svg/sprite/svg-sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 5.0625rem 4.0625rem;
+    display: inline-block;
+    .no-svg & {
+        background-image: url("../svg/sprite/svg-sprite.png");
+    }
+}
+
+.sprite__arrow-left:before {
+    @extend %sprite;
+    background-position: -0.0625rem -0.0625rem;
+    width: 1.1875rem;
+    height: 2.0625rem;
+}
+.sprite__arrow-left_hover:before {
+    @extend %sprite;
+    background-position: -1.3125rem -0.0625rem;
+    width: 1.1875rem;
+    height: 2.0625rem;
+}
+.sprite__arrow-right:before {
+    @extend %sprite;
+    background-position: -2.5625rem -0.0625rem;
+    width: 1.1875rem;
+    height: 2.0625rem;
+}
+.sprite__arrow-right_hover:before {
+    @extend %sprite;
+    background-position: -3.8125rem -0.0625rem;
+    width: 1.1875rem;
+    height: 2.0625rem;
+}
+.sprite__arrow-down:before {
+    @extend %sprite;
+    background-position: -0.0625rem -2.1875rem;
+    width: 1.125rem;
+    height: 1.8125rem;
+}
+.sprite__arrow-up:before {
+    @extend %sprite;
+    background-position: -1.25rem -2.1875rem;
+    width: 1.75rem;
+    height: 1.75rem;
+}
