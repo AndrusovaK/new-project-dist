@@ -1,4 +1,4 @@
-%sprite:before {
+.sprite() {
     content: ' ';
     background-image: url("{{{cssPathSvg}}}");
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 
 {{#sprites}}
 .sprite__{{fileName}}:before {
-    @extend %sprite;
+    .sprite;
     background-position: {{x}}{{units}} {{y}}{{units}};
     width: {{w}}{{units}};
     height: {{h}}{{units}};
